@@ -13,6 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Amazon Clone Vanilla</title>
+    <script type="module" src="app.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -60,42 +61,7 @@
           </div>
         </nav>
       </header>
-      <main class="content">
-        <ul class="products">
-          <li class="product">
-            <a
-              class="product__linkImage"
-              href="/#/product/1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="product__image"
-                src="./images/product-1.png"
-                alt="product"
-              />
-            </a>
-            <div class="product__info">
-              <h3 class="product__brand">
-                Patagonia
-              </h3>
-              <a href="/#/product/1" target="_blank" rel="noopener noreferrer">
-                <h4 class="product__name">
-                  Capilene Cool Daily Graphic Shirt
-                </h4>
-              </a>
-              <div class="product__rating">
-                <i class="fas fa-star"> </i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <div class="product__price">45.00<span>€</span></div>
-            </div>
-          </li>
-        </ul>
-      </main>
+      <main class="content" id="main-container"></main>
       <footer class="footer">All reserved rights 2020</footer>
     </div>
   </body>
