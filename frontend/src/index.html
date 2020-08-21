@@ -3,10 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
     <title>Amazon Clone Vanilla</title>
   </head>
   <body>
-    <h1>JS Amazon Clone</h1>
-    <p>Ecommerce con vanilla</p>
+    <div class="grid-container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__brand">
+            <div class="navbar__menu">
+              <i class="fas fa-bars"></i>
+            </div>
+            <a href="/" class="navbar__logo">
+              <img
+                src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <form class="navbar__search">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="navbar__searchInput"
+            />
+            <button class="navbar__searchBtn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="navbar__nav">
+            <a href="#" class="navbar__link">
+              <span class="navbar__linkLineOne">Hola, Sam</span>
+              <span class="navbar__linkLineTwo">Ingresar</span>
+            </a>
+            <a href="#" class="navbar__link">
+              <span class="navbar__linkLineOne">Devoluciones</span>
+              <span class="navbar__linkLineTwo">y Pedidos</span>
+            </a>
+            <a href="#" class="navbar__link">
+              <span class="navbar__linkLineOne">Subscribete a</span>
+              <span class="navbar__linkLineTwo">Prime</span>
+            </a>
+          </div>
+          <div class="navbar__cart">
+            <img class="navbar__cartImg" src="./images/cart.png" alt="cart" />
+            <span class="navbar__infoCart">Cesta</span>
+            <span class="navbar__countItems">0</span>
+          </div>
+        </nav>
+      </header>
+      <main class="content">Products</main>
+      <footer class="footer">All reserved rights 2020</footer>
+    </div>
   </body>
 </html>
