@@ -12,8 +12,7 @@ const HomesScreen = {
             <a
             class="product__linkImage"
             href="/#/product/${product._id}"
-            target="_blank"
-            rel="noopener noreferrer"
+            
             >
                 <img
                     class="product__image"
@@ -25,13 +24,13 @@ const HomesScreen = {
                 <h3 class="product__brand">
                     ${product.brand}
                 </h3>
-                <a href="/#/product/${product._id}" target="_blank" rel="noopener noreferrer">
+                <a href="/#/product/${product._id}" >
                     <h4 class="product__name">
                     ${product.name}
                     </h4>
                 </a>
                 <div class="product__rating">
-                    <i class="fas fa-star"> </i>
+                    <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
