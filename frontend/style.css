@@ -217,6 +217,9 @@ a {
   font-size: 0.8rem;
   color: var(--clr-orange-dark);
 }
+.product__rating span:last-child {
+  color: var(--clr-gray-dark);
+}
 .product__price {
   font-size: 1.5rem;
   font-weight: bold;
