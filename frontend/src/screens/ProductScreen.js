@@ -3,6 +3,12 @@ import { getProduct } from "../services/api";
 import Rating from "../components/Rating";
 
 const ProductScreen = {
+  after_render: () => {
+    const request = parseRequestUrl();
+    document.getElementById("add-btn").addEventListener("click", () => {
+      document.location.hash = `/cart/${request.id}`;
+    });
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
@@ -40,14 +46,20 @@ const ProductScreen = {
     </div>
     <div class="details-action">
         <ul>
-            <li><strong>${product.price}<span>€</span></strong></li>
+            <li><strong>${
+              product.countInStock > 0 ? `${product.price}<span>€</span>` : "-"
+            }</strong></li>
             <li>Status: ${
               product.countInStock > 0
                 ? `<span class="details-action__success">In Stock</span>`
                 : `<span class="details-action__error">Unavailable</span>`
             }</li>
-            <li>
-                <button id="add-btn" class="details-action__btn">Add to Cart</button>
+            <li>${
+              product.countInStock > 0
+                ? `<button id="add-btn" class="details-action__btn">Add to Cart</button>`
+                : `<button class="details-action__btn-wish">Add to Wish List</button>`
+            }
+                
             </li>
         </ul>
     </div>

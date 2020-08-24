@@ -302,6 +302,12 @@ ul {
   border-top: 1px solid var(--clr-gray-light);
   margin: 5px auto;
 }
+.details-action__success {
+  color: green;
+}
+.details-action__error {
+  color: var(--clr-red-dark);
+}
 .details-action__btn {
   width: 100%;
   margin-top: 0.5rem;
@@ -314,6 +320,20 @@ ul {
 }
 .details-action__btn:hover {
   background: #f1c554;
+}
+
+.details-action__btn-wish {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background: lightgray;
+  border: 1px solid;
+  border-color: var(--clr-gray-light);
+  padding: 0.3rem;
+}
+.details-action__btn-wish:hover {
+  background: rgb(187, 187, 187);
 }
 
 /*
