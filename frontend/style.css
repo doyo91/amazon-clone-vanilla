@@ -10,6 +10,7 @@
   --clr-orange-very-dark: #c77904;
   --clr-gray-dark: rgb(78, 78, 78);
   --clr-gray-light: #c6c6c6;
+  --clr-red-dark: #b12704;
 }
 body {
   font-size: 16px;
@@ -21,6 +22,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+ul {
+  list-style: none;
 }
 
 .grid-container {
@@ -167,13 +171,14 @@ a {
 .content {
   grid-area: main;
 }
+/* --------------- */
 .products {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
 }
-
+/* product */
 .product {
   min-width: 250px;
   max-width: 350px;
@@ -192,7 +197,6 @@ a {
   margin-top: 1rem;
   object-fit: contain;
 }
-
 .product__info {
   display: flex;
   flex-direction: column;
@@ -227,6 +231,89 @@ a {
 .product__price span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+/*
+===============================
+  Product Details  
+===============================
+*/
+.content-product {
+  padding: 1rem;
+}
+.back-to-result {
+  margin: 1rem auto;
+}
+/* --------------- */
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.product-details__image {
+  max-width: 350px;
+  min-width: 200px;
+  background: #f7f7f7;
+}
+.product-details__image img {
+  width: 100%;
+  object-fit: contain;
+}
+/* --------------- */
+.details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.details-info__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.details-info__rating {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  color: var(--clr-orange-dark);
+}
+.details-info__rating span:last-child {
+  color: var(--clr-gray-dark);
+}
+.details-info__price strong {
+  color: var(--clr-red-dark);
+}
+/* --------------- */
+.details-action {
+  width: 200px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--clr-gray-light);
+}
+.details-action li:nth-child(1) {
+  font-size: 1rem;
+  color: var(--clr-red-dark);
+  margin-bottom: 5px;
+}
+.details-action li:nth-child(2) {
+}
+.details-action li:last-child {
+  border-top: 1px solid var(--clr-gray-light);
+  margin: 5px auto;
+}
+.details-action__btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background: #f1cd71;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 0.3rem;
+}
+.details-action__btn:hover {
+  background: #f1c554;
 }
 
 /*
