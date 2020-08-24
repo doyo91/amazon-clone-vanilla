@@ -31,7 +31,7 @@ export default {
       price: 150,
       rating: 3.5,
       numReviews: 10,
-      countInStock: 6,
+      countInStock: 0,
     },
     {
       _id: "4",
