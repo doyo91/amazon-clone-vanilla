@@ -18,7 +18,7 @@ const ProductScreen = {
     return `
     <div class="content-product">
       <div class="back-to-result">
-        <a href="/#/">Back to result </a>
+        <a href="/#/">&larr; Volver</a>
       </div>
       <div class="product-details">
     <div class="product-details__image">
@@ -35,10 +35,10 @@ const ProductScreen = {
             })}
         </div>
         <p class="details-info__price">
-            Price: <strong>${product.price}<span>€</span></strong>
+            Precio: <strong>${product.price}<span>€</span></strong>
         </p>
         <div class="details-info__description">
-            Description:
+            Descripción:
             <p>
                 ${product.description}
             </p>
@@ -51,13 +51,13 @@ const ProductScreen = {
             }</strong></li>
             <li>Status: ${
               product.countInStock > 0
-                ? `<span class="details-action__success">In Stock</span>`
-                : `<span class="details-action__error">Unavailable</span>`
+                ? `<span class="details-action__success">En stock</span>`
+                : `<span class="details-action__error">No disponible</span>`
             }</li>
             <li>${
               product.countInStock > 0
-                ? `<button id="add-btn" class="details-action__btn">Add to Cart</button>`
-                : `<button class="details-action__btn-wish">Add to Wish List</button>`
+                ? `<button id="add-btn" class="details-action__btn">Añadir a la cesta</button>`
+                : `<button class="details-action__btn-wish">Añadir a la lista de deseos</button>`
             }
                 
             </li>

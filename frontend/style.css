@@ -118,7 +118,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  width: 290px;
   margin-left: 10px;
 }
 .navbar__link {
@@ -427,6 +427,69 @@ ul {
 }
 .cart__btn-action:hover {
   background: #f1c554;
+}
+
+/*
+===============================
+  Signin  
+===============================
+*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  width: 32rem;
+  padding: 2rem;
+  border: 1px var(--clr-gray-light) solid;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.form__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.form__email,
+.form__password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+.form__email label,
+.form__password label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.form__email input,
+.form__password input {
+  border-radius: 2px;
+  padding: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.form__btn {
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background: #f1cd71;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.form__btn:hover {
+  background: #f1c554;
+}
+
+.form__link a:hover {
+  color: var(--clr-orange-very-dark);
 }
 /*
 ===============================
