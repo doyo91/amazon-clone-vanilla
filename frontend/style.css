@@ -442,7 +442,7 @@ ul {
 }
 
 .form {
-  width: 32rem;
+  width: 300px;
   padding: 2rem;
   border: 1px var(--clr-gray-light) solid;
   display: flex;
@@ -450,7 +450,7 @@ ul {
   border-radius: 5px;
 }
 .form__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .form__email,
