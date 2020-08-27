@@ -1,6 +1,6 @@
 import { signin } from "../services/api";
 import { getUserInfo, setUserInfo } from "../services/localStorage";
-import { showLoading, hideLoading } from "../helpers/utils";
+import { showLoading, hideLoading, showMessage } from "../helpers/utils";
 
 const SigninScreen = {
   after_render: () => {
@@ -16,7 +16,7 @@ const SigninScreen = {
 
         hideLoading();
         if (data.error) {
-          alert(data.error);
+          showMessage(data.error);
         } else {
           setUserInfo(data);
           document.location.hash = "/";
