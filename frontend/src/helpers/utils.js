@@ -14,3 +14,10 @@ export const rerender = async (component) => {
   ).innerHTML = await component.render();
   await component.after_render();
 };
+
+export const showLoading = () => {
+  document.getElementById("loading-overlay").classList.add("active");
+};
+export const hideLoading = () => {
+  document.getElementById("loading-overlay").classList.remove("active");
+};
