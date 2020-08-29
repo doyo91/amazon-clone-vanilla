@@ -492,6 +492,7 @@ ul {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+.form__name,
 .form__email,
 .form__password {
   display: flex;
@@ -499,11 +500,13 @@ ul {
   margin-top: 0.8rem;
 }
 
+.form__name label,
 .form__email label,
 .form__password label {
   font-weight: bold;
   font-size: 0.8rem;
 }
+.form__name input,
 .form__email input,
 .form__password input {
   border-radius: 2px;
