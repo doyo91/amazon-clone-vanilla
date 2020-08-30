@@ -1,3 +1,6 @@
-Amazon Clone Vanilla (en progreso)
+## Amazon Clone Vanilla (en progreso)
 
-dev --> `npm start`
+# Desarrollo
+
+front --> `npm start`
+back --> `npm start`
