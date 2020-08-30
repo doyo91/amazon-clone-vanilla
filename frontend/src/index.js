@@ -6,6 +6,7 @@ import CartScreen from "./screens/CartScreen.js";
 import SigninScreen from "./screens/SigninScreen.js";
 import RegisterScreen from "./screens/RegisterScreen.js";
 import Header from "./components/Header";
+import ProfileScreen from "./screens/ProfileScreen.js";
 
 const routes = {
   "/": HomeScreen,
@@ -14,6 +15,7 @@ const routes = {
   "/cart": CartScreen,
   "/signin": SigninScreen,
   "/register": RegisterScreen,
+  "/profile": ProfileScreen,
 };
 
 const router = async () => {
@@ -30,7 +32,7 @@ const router = async () => {
 
   const main = document.getElementById("main-container");
   main.innerHTML = await screen.render();
-  await screen.after_render();
+  if (screen.after_render) await screen.after_render();
   hideLoading();
 };
 
