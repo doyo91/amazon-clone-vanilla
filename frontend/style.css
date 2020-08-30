@@ -533,6 +533,9 @@ ul {
 .form__link a:hover {
   color: var(--clr-orange-very-dark);
 }
+
+.profile-form {
+}
 /*
 ===============================
   Footer  
